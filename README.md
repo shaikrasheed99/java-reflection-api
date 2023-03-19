@@ -16,6 +16,8 @@ It can access the metadata of a class and its members, including their types, mo
 * `setAccessible(true)` - used to set the accessibility of a field or method 
 * `invoke(object)` - used to call the methods of an object 
 
+## Limitations & risks
+
 The Reflection API is powerful but also has below limitations and risks.
 
 * Reflection API can be slower because it will do operations in runtime.  
