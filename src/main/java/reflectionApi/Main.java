@@ -6,7 +6,9 @@ import java.lang.reflect.Method;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Avenger thor = new Avenger("Thor", 120);
+        Avenger thor = (Avenger) Class.forName(Avenger.class.getName()).getDeclaredConstructors()[0].newInstance("Thor", 120);
+        System.out.println("Creation of thor object is done!!");
+        System.out.println();
 
         System.out.println("List of fileds in Avenger class");
         Field[] fields = thor.getClass().getDeclaredFields();
